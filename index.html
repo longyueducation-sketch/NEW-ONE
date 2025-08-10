@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日代辦與請假日曆</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <header>
+        <h1>每日代辦與請假日曆</h1>
+        <button id="login-btn">Google 登入</button>
+        <button id="logout-btn" style="display:none;">登出</button>
+    </header>
+
+    <main>
+        <section id="calendar-section">
+            <h2>日曆（未實作詳細 UI，可後續加入）</h2>
+            <p>這裡可以放日曆元件</p>
+        </section>
+
+        <section id="todo-section">
+            <h2>待辦事項</h2>
+            <input type="text" id="todo-input" placeholder="輸入代辦事項...">
+            <button id="add-todo-btn">新增</button>
+            <ul id="todo-list"></ul>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
